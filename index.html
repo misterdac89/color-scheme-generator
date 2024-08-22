@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Color Scheme App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <input
+          type="color"
+          value="#f55a5a"
+          class="color-picker-btn"
+          id="input-color"
+        />
+        <select id="select-element">
+          <option value="monochrome">monochrome</option>
+          <option value="monochrome-dark">monochrome-dark</option>
+          <option value="monochrome-light">monochrome-light</option>
+          <option value="analogic">analogic</option>
+          <option value="complement">complement</option>
+          <option value="analogic-complement">analogic-complement</option>
+          <option value="triad">triad</option>
+          <option value="quad">quad</option>
+        </select>
+        <button class="color-scheme-btn" id="color-scheme-btn">
+          Get color scheme
+        </button>
+      </header>
+      <main class="colors-container" id="colors-container">
+        <div class="col-1"></div>
+        <div class="col-2"></div>
+        <div class="col-3"></div>
+        <div class="col-4"></div>
+        <div class="col-5"></div>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="footer-element">#F55A5A</div>
+        <div class="footer-element">#2B283A</div>
+        <div class="footer-element">#FBF3AB</div>
+        <div class="footer-element">#AAD1B6</div>
+        <div class="footer-element">#A626D3</div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

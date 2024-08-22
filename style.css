@@ -1,0 +1,137 @@
+/* This is the css reset  */
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* This is the body css styles */
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: #444;
+}
+
+.container {
+  width: 34.375rem;
+  height: 34.375rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 4fr 0.5fr;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header {
+  grid-row: span 1;
+  grid-column: 1 / -1;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: 0.25fr 2fr 1.15fr;
+  column-gap: 15px;
+  align-items: center;
+}
+
+.color-picker-btn {
+  border: none;
+  height: 40px;
+  width: 60px;
+}
+
+select {
+  border-radius: 5px;
+  padding: 0.625rem;
+  font-size: 0.95rem;
+  background-color: inherit;
+  color: #fff;
+}
+
+option {
+  color: #fff;
+}
+
+.color-scheme-btn {
+  background: #3d4b60;
+  color: #fff;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.colors-container,
+.footer {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.col-1 {
+  background-color: #f55a5a;
+}
+
+.col-2 {
+  background-color: #2b283a;
+}
+
+.col-3 {
+  background-color: #fbf3ab;
+}
+
+.col-4 {
+  background-color: #aad1b6;
+}
+
+.col-5 {
+  background-color: #a626d3;
+}
+
+.footer-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+}
